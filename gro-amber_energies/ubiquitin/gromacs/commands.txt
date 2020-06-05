@@ -1,7 +1,7 @@
 ~~~ GROMACS commands to get the energies of ubiquitin in vacuum ~~~
 
 gmx make_ndx -f gromacs.gro 
-gmx grompp -f ../mdout_vac.mdp -p gromacs.top -c gromacs.gro -n index.ndx
+gmx grompp -f mdout_vac.mdp -p gromacs.top -c gromacs.gro -n index.ndx
 gmx mdrun -s topol.tpr -rdd 0.1
 gmx energy -f ener.edr
 
