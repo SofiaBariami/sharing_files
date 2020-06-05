@@ -1,0 +1,12 @@
+~~~ Amber commands to get the ubiquitin energies ~~~
+
+sander -O -i min.in -o sander_mut -c ubq_mut.rst7 -p ubq_mut.prm7
+
+
+   NSTEP       ENERGY          RMS            GMAX         NAME    NUMBER
+      1       5.7601E+02     6.2684E+01     1.5959E+03     O        1173
+ BOND    =     1476.6393  ANGLE   =      269.9350  DIHED      =      721.1363
+ VDWAALS =     -139.8939  EEL     =    -5276.6718  HBOND      =        0.0000
+ 1-4 VDW =      414.8820  1-4 EEL =     3109.9821  RESTRAINT  =        0.0000
+
+
