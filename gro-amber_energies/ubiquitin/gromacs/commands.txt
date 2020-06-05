@@ -1,0 +1,21 @@
+~~~ GROMACS commands to get the energies of ubiquitin in vacuum ~~~
+
+gmx make_ndx -f gromacs.gro 
+gmx grompp -f ../mdout_vac.mdp -p gromacs.top -c gromacs.gro -n index.ndx
+gmx mdrun -s topol.tpr -rdd 0.1
+gmx energy -f ener.edr
+
+Energy                      Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Bond                        535.032         --          0          0  (kJ/mol)
+Angle                       1129.41         --          0          0  (kJ/mol)
+Proper Dih.                 3017.23         --          0          0  (kJ/mol)
+LJ-14                       1735.87         --          0          0  (kJ/mol)
+Coulomb-14                  13012.6         --          0          0  (kJ/mol)
+LJ (SR)                    -544.258         --          0          0  (kJ/mol)
+Coulomb (SR)                 -20834         --          0          0  (kJ/mol)
+Potential                   -1948.1         --          0          0  (kJ/mol)
+Kinetic En.                 8318.03         --          0          0  (kJ/mol)
+Total Energy                6369.93         --          0          0  (kJ/mol)
+Temperature                 653.661         --          0          0  (K)
+Pressure                          0         --          0          0  (bar)
