@@ -1,0 +1,3 @@
+~~~ Amber commands to get the ubiquitin energies ~~~
+
+sander -O -i min.in -o sander_mut -c ubq_mut.rst7 -p ubq_mut.prm7
