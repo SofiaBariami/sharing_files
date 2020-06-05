@@ -1,0 +1,36 @@
+# This file was created Fri Jun  5 16:33:03 2020
+# Created by:
+#                      :-) GROMACS - gmx energy, 2019.1 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/sofia/Desktop/COVID19-study/test_random_protein/ubiquitin/amber_mut
+# Command line:
+#   gmx energy -f ener.edr
+# gmx energy is part of G R O M A C S:
+#
+# GROningen Mixture of Alchemy and Childrens' Stories
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol), (K), (bar)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Bond"
+@ s1 legend "Angle"
+@ s2 legend "Proper Dih."
+@ s3 legend "LJ-14"
+@ s4 legend "Coulomb-14"
+@ s5 legend "LJ (SR)"
+@ s6 legend "Coulomb (SR)"
+@ s7 legend "Potential"
+@ s8 legend "Kinetic En."
+@ s9 legend "Total Energy"
+@ s10 legend "Temperature"
+@ s11 legend "Pressure"
+    0.000000  535.031738  1129.408569  3017.234131  1735.865234  13012.614258  -544.258057  -20833.998047  -1948.102051  8318.027344  6369.925293  653.661438    0.000000
